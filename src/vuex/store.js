@@ -10,7 +10,7 @@ const store = new Vuex.Store({
   },
   actions: {
     GET_USERS_FROM_API({commit}) {
-      return axios('http://localhost:3000/users', {
+      return axios('https://my-json-server.typicode.com/OleksandrRbh/mosaic_test/users', {
         method: 'GET'
       })
         .then((response) => {
